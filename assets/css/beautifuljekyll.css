@@ -1091,8 +1091,8 @@ pre {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   .container-md, .container {
-    max-width: 50%;
+    max-width: 700px;
   }
 }
