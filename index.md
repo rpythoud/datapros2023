@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 <div style="text-align: center;">
