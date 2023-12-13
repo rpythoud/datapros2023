@@ -1,5 +1,5 @@
 ---
-layout: beautifuljekyll-minimal
+layout: beautifuljekyll
 ---
 
 <div style="text-align: center;">
