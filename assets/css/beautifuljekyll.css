@@ -1090,3 +1090,9 @@ pre {
     display: inline-block;
   }
 }
+
+@media (min-width: 768px) {
+  .container-md, .container {
+    max-width: 60%;
+  }
+}
