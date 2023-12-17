@@ -13,6 +13,6 @@ Welcome to Blockbuster Inc., the only movie producer obsessed on achieving the h
 
 ### 8:00-8:30: Introduction to the dataset | Speaker: Romain
 
-<!--#include virtual="./img/gilles_slider_plotly.html" -->
+{% include "./img/gilles_slider_plotly.html" %}
 
 
