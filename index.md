@@ -7,7 +7,7 @@ layout: default
 </div>
 ### Meeting invitation
 
-Welcome to Blockbuster Inc., the only movie producing company obsessed on achieving the highest financial results in the film industry. You have the chance to take part of our latest board meeting, where our hard working interns sum up their most promising findings. During this meeting of the highest importance, they will expose the secret sauce that turns a movie into a worldwide success. In case you would be reluctant to attend this meeting, be assured that the quality of the investigation will be mind-blowing, since our newly hired interns were given unlimited access to our next generation quantum compute clusters and were generously compensated for their job. We strongly encourage you to attend the meeting.
+Welcome to Blockbuster Inc., the only movie producer obsessed on achieving the highest financial results in the film industry. You have the chance to take part of our latest board meeting, where our hard working interns sum up their most promising findings. During this meeting of the highest importance, they will expose the secret sauce that turns a movie into a worldwide success. In case you would be reluctant to attend this summit, be assured that the investigation presented will be mind-blowing, since our newly hired interns were given unlimited access to our next generation quantum compute clusters and were generously compensated for their job. We strongly encourage you to attend the meeting.
 
 ## About the Movie Industry
 
