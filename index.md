@@ -8,7 +8,7 @@ layout: default
 
 ### Large image
 
-![Grumpy Cat](./img/grumpy-cat-2-2000-9fa48ba1e7d843c49b5dda77593f615d.jpg)
+![Grumpy Cat](./img/Blockbuster.png)
 
 ## About the Movie Industry
 
