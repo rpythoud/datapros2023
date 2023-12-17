@@ -1093,6 +1093,6 @@ pre {
 
 @media (min-width: 992px) {
   .container-md, .container {
-    max-width: 780px;
+    max-width: 800px;
   }
 }
