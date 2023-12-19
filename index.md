@@ -41,7 +41,7 @@ From this plot, we can see that the increase of movie revenues over the years fo
 ### 9:00-9:30: Coffee break
 
 <div style="text-align: center;">
-    <img src="./img/coffee_break.png" alt="plot4" style="width: 70%; margin: auto; display: block;">
+    <img src="./img/coffee_break.jpg" alt="plot4" style="width: 70%; margin: auto; display: block;">
 </div>
 
 ### 9:30-10:00: Gender and revenues relationship | Speaker: Gilles
