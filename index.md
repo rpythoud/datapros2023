@@ -18,7 +18,7 @@ For this investigation, the CMU Movie Corpus dataset will be used to take a dive
 Furthermore, a quick look at the main dataset shows that most of the box office revenues data related to the films are missing. This observation is confirmed by the following plot.
 
 <div style="text-align: center;">
-    <img src="./img/Romain_missing_data.png" alt="Logo" style="width: 70%; margin: auto; display: block;">
+    <img src="./img/Romain_missing_data.png" alt="plot1" style="width: 70%; margin: auto; display: block;">
 </div>
 
 Although the proportion of missing revenues data is high, an analysis on the overall box office revenues could still provide relevant insights as the total number of remaining is still significant.
@@ -26,18 +26,28 @@ Although the proportion of missing revenues data is high, an analysis on the ove
 A plot of the movie revenues over the years is done below.
 
 <div style="text-align: center;">
-    <img src="./img/Romain_regression.png" alt="Logo" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/Romain_regression.png" alt="plot2" style="width: 80%; margin: auto; display: block;">
 </div>
 
 From this plot, we can see that the increase of movie revenues over the years follow an exponential distribution. This is further confirmed by the positive slope of the linear regression on the log axis of the data points. This exponential increase in box office revenues over the years is due to the compounding effect of monetary inflation year over year. We can take into account this effect by adjusting the revenues in usd using inflation data provided by the US Consumer price index (CPI). Although other effects can affect the revenue distribution over the years like the size of the adressable market, the resulting plot is a more reliable representation of the financial success of a movie through history.
 
 <div style="text-align: center;">
-    <img src="./img/Romain_adjusted_inflation.png" alt="Logo" style="width: 70%; margin: auto; display: block;">
+    <img src="./img/Romain_adjusted_inflation.png" alt="plot3" style="width: 70%; margin: auto; display: block;">
 </div>
 
 
-### 8:30-9:00: 
+### 8:30-9:00: Genres decomposition | Speaker: Adam
+
+### 9:00-9:30: Coffee break
+
+### 9:30-10:00: Gender and revenues relationship | Speaker: Gilles
+
 {% include gilles_slider_plotly.html %}
+
+### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
+
+### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
+
 
 
 
