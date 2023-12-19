@@ -40,6 +40,10 @@ From this plot, we can see that the increase of movie revenues over the years fo
 
 ### 9:00-9:30: Coffee break
 
+<div style="text-align: center;">
+    <img src="./img/coffee_break.png" alt="plot4" style="width: 70%; margin: auto; display: block;">
+</div>
+
 ### 9:30-10:00: Gender and revenues relationship | Speaker: Gilles
 
 {% include gilles_slider_plotly.html %}
@@ -47,6 +51,8 @@ From this plot, we can see that the increase of movie revenues over the years fo
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
+
+### 11:00-12:00 Lunch together !!!
 
 
 
