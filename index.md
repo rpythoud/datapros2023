@@ -16,7 +16,7 @@ Welcome to Blockbuster Inc., the only movie producer obsessed on achieving the h
 For this investigation, the CMU Movie Corpus dataset will be used to take a dive into the realms of movie industry. This dataset includes movie names, actors, release date and box office revenues. The dataset does not include any information on movies ratings, a useful component of our analysis as it includes the overall public perception. To adress this issue, we supplemented it with the IMDb Movie Dataset providing the movie ratings. Furthermore, a quick look at the main dataset shows that most of the box office revenues data related to the films are missing. This observation is confirmed by the following plot.
 
 <div style="text-align: center;">
-    <img src="./img/Romain_missing_data.png" alt="Logo" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/Romain_missing_data.png" alt="Logo" style="width: 80%; margin: auto; display: block;">
 </div>
 
 Although the proportion of missing revenues data is high, an analysis on the overall box office revenues could still provide relevant insights as the total number of remaining is still significant.
@@ -24,7 +24,11 @@ Although the proportion of missing revenues data is high, an analysis on the ove
 A plot of the movie revenues over the years is done below.
 
 <div style="text-align: center;">
-    <img src="./img/Romain_missing_data.png" alt="Logo" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/Romain_regression.png" alt="Logo" style="width: 80%; margin: auto; display: block;">
+</div>
+
+<div style="text-align: center;">
+    <img src="./img/Romain_adjusted_inflation.png" alt="Logo" style="width: 80%; margin: auto; display: block;">
 </div>
 
 ### 8:30-9:00: 
