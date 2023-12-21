@@ -64,11 +64,23 @@ We'll then proceed by aggregating the distribution of gender for each decade but
     <img src="./img/gilles_20_percent_rating_revenue.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
+With this observation in mind, the next step is to compute the relative performance of the movie at the box office and in the ratings when varying the percentage of female in the movie cast by decade. 
+
 <div style="text-align: center;">
     <img src="./img/gilles_error_bars.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
+Considering the entire dataset time range, we notice a clear drop when the percentage of women actor exceed 40%.
+Meanwhile, the effect on rating is much less noticable, remaining in a small range of 5% of performance difference.
+
+The box office is our focus, and it seems like gender won't have much effet on our rating. From those analysis, it would seem that historically, a low percentage of women would yield the best results !
+But times are changing, let's check the evolution, let's make sure we don't make any mistake. A bad buzz would not help us in the long term.
+
 {% include gilles_dynamic.html %}
+
+We keep seeing that the percentage of woman actor has had, and still has, low effect on the rating. We can focus on the revenu.
+While the effect are getting less and less extreme on the performance when it comes to have a higher concentration of women ( as long as it remains close to 50% ), it would still seems that to be in the safer side and maximuze profit, we want to focus in a high concentration of man actors !
+But times are changing fast, we might need more, and mostly more recent data. If we are to stay on the curring age of box office. But everything indicates that a low percentage of women actor would be a better bet to maximise revenue.
 
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
 
