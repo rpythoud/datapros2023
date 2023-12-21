@@ -41,7 +41,7 @@ From this plot, we can see that the increase of movie revenues over the years fo
 {% include adam_camember.html %}
 {% include adam_strats.html %}
 {% include adam_genre_revenu.html %}
-
+{% include adam_language_revenu.html %}
 
 ### 9:00-9:30: Coffee break
 
