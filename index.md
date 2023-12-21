@@ -58,7 +58,7 @@ As for the box office revenues, the availability of data regarding the gender di
     <img src="./img/gilles_percentage_male.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
-We'll then proceed by analyzing the distribution of gender but only by keeping the 20% most successful movies, both in terms of box office and ratings. This could uncover different significant observations. Both plots are very similar, which suggests again that the overlap between good ratings and high revenues is significant.
+We'll then proceed by aggregating the distribution of gender for each decade but by keeping only the actors that featured in the 20% most successful movies, both in terms of box office and ratings. This could uncover different significant observations. Overall, both plots look very similar, which suggests again that the overlap between good ratings and high revenues is significant and that the difference between the two subsets is minimal. Although the plots suffer minor fluctuations, we can mention the predominance of male characters through the cinematographic history. This sets the stage for more complex analysis, potentially exploring factors influencing these trends.
 
 <div style="text-align: center;">
     <img src="./img/gilles_20_percent_rating_revenue.png" alt="plot" style="width: 100%; margin: auto; display: block;">
