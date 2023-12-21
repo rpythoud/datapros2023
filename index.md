@@ -64,6 +64,10 @@ We'll then proceed by aggregating the distribution of gender for each decade but
     <img src="./img/gilles_20_percent_rating_revenue.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
+<div style="text-align: center;">
+    <img src="./img/gilles_error_bars.png" alt="plot" style="width: 100%; margin: auto; display: block;">
+</div>
+
 {% include gilles_dynamic.html %}
 
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
