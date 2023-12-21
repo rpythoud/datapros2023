@@ -36,7 +36,7 @@ From this plot, we can see that the increase of movie revenues over the years fo
 </div>
 
 
-### 8:30-9:00: Genres decomposition | Speaker: Adam
+### 8:30-9:00: Movie genres clustering | Speaker: Adam
 
 ### 9:00-9:30: Coffee break
 
@@ -46,16 +46,20 @@ From this plot, we can see that the increase of movie revenues over the years fo
 
 ### 9:30-10:00: Gender and revenues relationship | Speaker: Gilles
 
+Genders of the cast may be an important factor to the financial succcess of the movies. First, let's have a look at the total count of actors over the years, splitted by their gender.
+
 <div style="text-align: center;">
-    <img src="./img/gilles_plot0.png" alt="plot" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/gilles_total_gender.png" alt="plot" style="width: 70%; margin: auto; display: block;">
+</div>
+
+As for the box office revenues, the availability of data regarding the gender distribution of the cast is constrained to the century spanning from 1910 to 2010. We will thus limit ourselves to this time span for further analysis. A graph that is significantly more informative is the percentage of male vs female characters proportion in the cast of movies over the years. The following graph reveals a relatively stable ratio over time with minor fluctuations, so we can't extract any particular trend from this plot. A modest decline is observed as we approach 2010, likely indicative of gradual shifts in gender representation. The abrupt rise thereafter suggests a data irregularity due to a smaller sample size in recent years, rather than a genuine trend reversal. This highlights the importance of considering sample size when interpreting data, as anomalies may distort the understanding of long-term patterns.
+
+<div style="text-align: center;">
+    <img src="./img/gilles_percentage_male.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 
 <div style="text-align: center;">
-    <img src="./img/gilles_plot1.png" alt="plot" style="width: 60%; margin: auto; display: block;">
-</div>
-
-<div style="text-align: center;">
-    <img src="./img/gilles_plot2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
+    <img src="./img/gilles_top_20_percent.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
 {% include gilles_dynamic.html %}
