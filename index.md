@@ -46,6 +46,18 @@ From this plot, we can see that the increase of movie revenues over the years fo
 
 ### 9:30-10:00: Gender and revenues relationship | Speaker: Gilles
 
+<div style="text-align: center;">
+    <img src="./img/gilles_plot0.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+</div>
+
+<div style="text-align: center;">
+    <img src="./img/gilles_plot1.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+</div>
+
+<div style="text-align: center;">
+    <img src="./img/gilles_plot2.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+</div>
+
 {% include gilles_dynamic.html %}
 
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
