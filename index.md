@@ -38,6 +38,11 @@ From this plot, we can see that the increase of movie revenues over the years fo
 
 ### 8:30-9:00: Movie genres clustering | Speaker: Adam
 
+{% include adam_camember.html %}
+{% include adam_strats.html %}
+{% include adam_genre_revenu.html %}
+
+
 ### 9:00-9:30: Coffee break
 
 <div style="text-align: center;">
