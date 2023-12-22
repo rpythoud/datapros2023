@@ -84,10 +84,19 @@ Violin plots are useful because they immediately provide the density of the dist
 This plot in particular is interesting because some languages, like German anf French, have a wider range of revenues (potentially indicating both low and high gross revenues of movies). Others, like Korean and English, have a narrower distribution (potentially more consistent revenue figures). Finaly, some languages, like the Korean, has a high density of data around the median revenue, as indicated by the thickness of the violins.
 
 <div style="text-align: center;">
-    <img src="./img/adam_movie_runtime.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/adam_movie_runtime.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 
-We can infer from the movie runtime plot there seems to be no linear relationship between revenue and runtime. Furthermore, the movie runtime data seems normaly distributed around 100 minutes of movie duration. This is a useful indication to identify the most suited movie runtime associated to the highest box office revenues.
+We can infer from the movie runtime plot there seems to be no linear relationship between revenue and runtime. However, the movie runtime data seems normaly distributed around 100 minutes of movie duration. This is a useful indication to identify the most suited movie runtime associated to the highest box office revenues.
+
+An other question can arise. Do higher box office revenues unequivocally translates into better ratings? The following histogram displaying the average box office revenues per rating seems to go in that direction.
+
+<div style="text-align: center;">
+    <img src="./img/adam_revenue_ratings.png" alt="plot" style="width: 70%; margin: auto; display: block;">
+</div>
+
+We computed and displayed the mean revenue of the movies with respect to their rating. Unsurprisingly, the graph indicates the higher the ratings, the higher the box office revenues will be. This suggests that, on average, higher-rated movies tend to generate more revenue at the box office.
+The highest revenue is associated with movies that have an average rating of 9.0, which is significantly higher than all other ratings. The lowest box office revenue is associated with movies that have the lowest average ratings (1.5 to 2.5). Overall, we concur that a few high-grossing blockbusters could skew the average revenue upward for a particular rating. For example, the data doesn’t account for other factors that can influence box office revenue, such as marketing budgets, the presence of star actors, genre, seasonal release dates, and competition from other movies at the time of release.
 
 ### 9:00-9:30: Coffee break
 
