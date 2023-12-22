@@ -112,13 +112,13 @@ As the film industry undergoes transformations, there's evidence to suggest that
 ### 10:00-10:30  Influence of actors' fame on revenue | Speaker: Marko
 
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_number.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_number.png" alt="plot" style="width: 60%; margin: auto; display: block;">
 </div>
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_casting.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_casting.png" alt="plot" style="width: 60%; margin: auto; display: block;">
 </div>
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 60%; margin: auto; display: block;">
 </div>
 
 | Principal Component | Explained Variance Ratio |
