@@ -10,11 +10,13 @@ layout: default
 
 Welcome to Blockbuster Inc., the only movie producer obsessed on achieving the highest financial results in the film industry. You have the chance to take part of our latest board meeting, where our hard working interns sum up their most promising findings. During this meeting of the highest importance, they will expose the secret sauce that turns a movie into a worldwide success. In case you would be reluctant to attend this summit, be assured that the investigation presented will be ground-breaking, since our newly hired interns were given unlimited access to our next generation quantum compute clusters and were generously compensated for their job. We strongly encourage you to attend the meeting. Stay tuned!
 
+Name of the interns: Adam Benslama, Dusan Cvijetic, Gilles Moreillon, Marko Simic, Romain Pythoud 
+
 ## Start of the meeting
 
 ### 8:00-8:30: Introduction to the dataset | Speaker: Romain
 
-For this investigation, the CMU Movie Corpus dataset will be used to take a dive into the realms of movie industry. This dataset includes movie titles, featured actors, related genres, corresponding box office revenues and more. Regrettably, the dataset does not include any information on movies ratings, a useful component of our analysis as it includes the overall public perception. To adress this issue, we supplemented it the main dataset with the IMDb Movie Dataset, which provides the movie ratings. 
+For this investigation, the CMU Movie Corpus dataset will be used to take a dive into the realms of movie industry. This dataset includes movie titles, featured actors, related genres, corresponding box office revenues and more. Regrettably, the dataset does not include any information on movies ratings, a useful component of our analysis as it includes the overall public perception. To adress this issue, we supplemented the main dataset with the IMDb Movie Dataset, which provides the movie ratings. 
 
 Furthermore, a quick look at the main dataset shows that most of the box office revenues data related to the films are missing. This observation is confirmed by the following plot.
 
@@ -92,7 +94,7 @@ We can infer from the movie runtime plot there seems to be no linear relationshi
 An other question can arise. Do higher box office revenues unequivocally translates into better ratings? The following histogram displaying the average box office revenues per rating seems to go in that direction.
 
 <div style="text-align: center;">
-    <img src="./img/adam_revenue_ratings.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/adam_revenue_ratings.png" alt="plot" style="width: 90%; margin: auto; display: block;">
 </div>
 
 We computed and displayed the mean revenue of the movies with respect to their rating. Unsurprisingly, the graph indicates the higher the ratings, the higher the box office revenues will be. This suggests that, on average, higher-rated movies tend to generate more revenue at the box office.
@@ -169,13 +171,15 @@ One way to assess the strength between actor-centric metrics relationship is to 
 | 2                   | 0.3110                    |
 | 3                   | 0.1085                    |
 
+and their relative contributions:
+
 | Variable            | Contribution |
 |---------------------|--------------|
 | Weighted Rating     | 0.2884       |
 | Years of casting    | 0.6789       |
 | Number of movies    | 0.6752       |
 
-The next step denoted as R², for each model. This is a statistical measure that represents the proportion of the variance in a dependent variable which is Average Box office revenue, that is predictable from an independent variable. In our case, there are only 3 features to consider.
+The next step is to compute the coefficient of determination denoted as R², for each model. This statistical measure representing the proportion of the variance in a dependent variable which is the Average Box office revenue, that is predictable from a second independent variable. In our case, there are only 3 features to consider.
 
 These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue.
 
