@@ -65,7 +65,9 @@ Since we adjusted the revenu of each movie with the inflation, we are now allowe
 
 We are well aware that other factors than inflation can have an effect on the financial performance of a movie like money invested, the number of cinemas and their affordability (price of ticket).
 
-{% include adam_language_revenu.html %}
+<div style="text-align: center;">
+    <img src="./img/adam_smooth_language.png" alt="plot" style="width: 100%; margin: auto; display: block;">
+</div>
 
 ### 9:00-9:30: Coffee break
 
