@@ -111,15 +111,24 @@ As the film industry undergoes transformations, there's evidence to suggest that
 
 ### 10:00-10:30  Influence of actors' fame on revenue | Speaker: Marko
 
+We want to quantify the actors' fame in some way. We decided to consider actor's career span, number of movies they starred in, average box office revenue and the average rating of movies they appeared in. Let's delve right in.
+
+In this segment, we are creating a new data frame that focuses on key information about each actor. Initially, we remove any instances of NaN values to ensure the accuracy of our data. The primary columns of this data frame grouped by actors include the average Weighted Rating, Number of Movies, Years of Casting, and Average Box Office.
+
+The Weighted Rating column is particularly insightful as it considers the Average Rating of the IMDb dataset weighted by the number of votes, thus providing a more comprehensive view of their acclaim. To compute the Years of Casting for each actor, we determine the span of their career by subtracting the year of their last movie from the year of their first movie. This approach gives us a reliable duration of each actor active years in the film industry.
+
+First, let's explore the actor-centric metrics and their films' average box office revenues using scatter plots and statistical correlation analysis.
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_number.png" alt="plot" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_number.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_casting.png" alt="plot" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_casting.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 <div style="text-align: center;">
-    <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 60%; margin: auto; display: block;">
+    <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
+
+The Pearson correlation coefficients provide a quantifiable measure of how these factors are related, although it's important to note that a correlation does not imply causation. We'll look at the p-value, which will help us understand if the link we see in our data is meaningful or just happened by chance.
 
 | Principal Component | Explained Variance Ratio |
 |---------------------|---------------------------|
