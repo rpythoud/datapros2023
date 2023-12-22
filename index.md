@@ -89,10 +89,10 @@ As the film industry undergoes transformations, there's evidence to suggest that
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
 
 <div style="text-align: center;">
-    <div style="display: inline-block; width: 45%; margin: auto;">
+    <div style="display: inline-block; width: 49%; margin: auto;">
         <img src="./img/Marko_ccdf_nb_movies.png" alt="plot" style="width: 100%;">
     </div>
-    <div style="display: inline-block; width: 45%; margin: auto;">
+    <div style="display: inline-block; width: 49%; margin: auto;">
         <img src="./img/Marko_ccdf_years_casting.png" alt="second plot" style="width: 100%;">
     </div>
 </div>
