@@ -227,6 +227,10 @@ The magnitude of the T-statistic is quite large, suggesting a significant differ
 
 The P-value being extremely small (in this case, approximately 2.83e-19) is a strong indication to reject the null hypothesis meaning there is indeed a strong implied difference for actors with higher number of movies featured in.
 
+We can perform the same kind of analysis but with respect to the Career Length of actors instead of the total number of movies they featured in. Furthermore, we'll aggregate the data by average weighted rating instead of box office revenues. This time, we present the results in an interactive plot, where each position of the slider corresponds to a different movie group, enabling users to observe not only how the density of average box office revenue varies but also the distribution of weighted average ratings within each group. This dual focus on both average box office revenue and weighted ratings offers a comprehensive view of an actor's filmography.
+
+{% include marko_interactive.html %}
+
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
 
