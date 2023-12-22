@@ -165,41 +165,30 @@ The Pearson correlation coefficients provide a quantifiable measure of how these
 
 One way to assess the strength between actor-centric metrics relationship is to perform the Principal Component Analysis (PCA). The PCA analysis can in particular be used to uncover which variable is the most influential. The following tables collect the computed explained variance ratio for each of these components, thus indicating how much of the total variance in the data each component accounts for.
 
-<div style="text-align: center;">
-    <table style="margin-left: auto; margin-right: auto;">
-        | Principal Component | Explained Variance Ratio  |
-        |---------------------|---------------------------|
-        | 1                   | 0.5805                    |
-        | 2                   | 0.3110                    |
-        | 3                   | 0.1085                    |
-    </table>
-</div>
+| Principal Component | Explained Variance Ratio  |
+|---------------------|---------------------------|
+| 1                   | 0.5805                    |
+| 2                   | 0.3110                    |
+| 3                   | 0.1085                    |
 
 and their relative contributions:
 
-<div style="text-align: center;">
-    <table style="margin-left: auto; margin-right: auto;">
-        | Variable            | Contribution |
-        |---------------------|--------------|
-        | Weighted Rating     | 0.2884       |
-        | Years of casting    | 0.6789       |
-        | Number of movies    | 0.6752       |
-    </table>
-</div>
+| Variable            | Contribution |
+|---------------------|--------------|
+| Weighted Rating     | 0.2884       |
+| Years of casting    | 0.6789       |
+| Number of movies    | 0.6752       |
+
 
 The next step is to compute the coefficient of determination denoted as R², for each model. This statistical measure represents the proportion of the variance in a dependent variable which is the Average Box office revenue, that is predictable from a second independent variable. In our case, there are only 3 features to consider.
 
 These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue. The results are shown on the following table and since they are very low, it suggests that none of these individual metrics are strong predictors of an actor's average box office revenue when considered independently. This highlights the complexity of identifying box office success predictors, successes which are likely influenced by a multitude of factors beyond these individual metrics.
 
-<div style="text-align: center;">
-    <table style="margin-left: auto; margin-right: auto;">
 | Variable            | R^2          |
 |---------------------|--------------|
 | Weighted Rating     | 0.033        |
 | Years of casting    | 0.002        |
 | Number of movies    | 0.001        |
-    </table>
-</div>
 
 In many real-world datasets, especially those related to social phenomena like movie financial results, the distribution of their values can be heavy-tailed. This means that a large proportion of the data points are gathered in the lower range (like actors with few movies), but there's a long tail in the distribution representing significant cases (like actors with many movies). Standard statistical methods might not effectively capture the characteristics of such distributions. For this reason, we decide to use the Complementary Cumulative Distribution Function of our toolbox, to better capture the data distribution.
 
@@ -223,6 +212,10 @@ In both cases, the CCDF plots shows a linear trend in the logscale plot, which i
 The plots clearly show a shift of the distribution to the right of the average box office when considering groups of increasing filmography volumes. The next step is to verify scientificaly, with the help of hypothesis testing, if actors with higher number of movies indeed feature in financially more successful movies.
 
 To do so, let's first divide the dataset into two groups of similar sizes and plot their average box office distributions.
+
+<div style="text-align: center;">
+    <img src="./img/Marko_box_revenue_2groups.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+</div>
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
