@@ -92,7 +92,7 @@ We can infer from the movie runtime plot there seems to be no linear relationshi
 An other question can arise. Do higher box office revenues unequivocally translates into better ratings? The following histogram displaying the average box office revenues per rating seems to go in that direction.
 
 <div style="text-align: center;">
-    <img src="./img/adam_revenue_ratings.png" alt="plot" style="width: 70%; margin: auto; display: block;">
+    <img src="./img/adam_revenue_ratings.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
 We computed and displayed the mean revenue of the movies with respect to their rating. Unsurprisingly, the graph indicates the higher the ratings, the higher the box office revenues will be. This suggests that, on average, higher-rated movies tend to generate more revenue at the box office.
