@@ -223,6 +223,10 @@ Then, the t-test enables us to check if there's a noticable difference in the di
     <img src="./img/Marko_conf_inter_nb_movies.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 
+The magnitude of the T-statistic is quite large, suggesting a significant difference between the two groups. In other words, the larger the absolute value of the T-statistic, the greater the evidence against the null hypothesis, which states that there is no difference between the groups.
+
+The P-value being extremely small (in this case, approximately 2.83e-19) is a strong indication to reject the null hypothesis meaning there is indeed a strong implied difference for actors with higher number of movies featured in.
+
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
 
