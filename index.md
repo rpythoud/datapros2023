@@ -65,8 +65,18 @@ Since we adjusted the revenu of each movie with the inflation, we are now allowe
 
 We are well aware that other factors than inflation can have an effect on the financial performance of a movie like money invested, the number of cinemas and their affordability (price of ticket).
 
+Here, we did the same analysis as for the genre but with the language instead. We kept the six most frequent movie languages. We wanted an easy and quick visualization used for comparison of the movie languages. From these plots, we can compare languages from the same period and also observe the evolution of each language over time. To get a smoother aspect of the plot, a moving average was performed. This removes the short term fluctuations and allows to analyze trends, although at the cost of loosing a bit of granularity in the data points.
+
+With our analysis, we could in theory predict future box office by basing our assumptions on the trends and evolution over time. For this reason, the smoothing of our data is well suited.
+
 <div style="text-align: center;">
     <img src="./img/adam_smooth_language.png" alt="plot" style="width: 100%; margin: auto; display: block;">
+</div>
+
+To enhance further our understanding of the data distribution, we will delve into a more informative type of data representation.
+
+<div style="text-align: center;">
+    <img src="./img/adam_violin_plot.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
 ### 9:00-9:30: Coffee break
