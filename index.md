@@ -88,6 +88,15 @@ As the film industry undergoes transformations, there's evidence to suggest that
 
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
 
+<div style="text-align: center;">
+    <div style="display: inline-block; margin: auto;">
+        <img src="./img/Marko_ccdf_nb_movies.png" alt="plot" style="width: 50%;">
+    </div>
+    <div style="display: inline-block; margin: auto;">
+        <img src="./img/Marko_ccdf_years_casting.png" alt="second plot" style="width: 50%;">
+    </div>
+</div>
+
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
 ### 11:00-12:00 Business lunch with the board !
