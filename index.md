@@ -181,7 +181,7 @@ and their relative contributions:
 
 The next step is to compute the coefficient of determination denoted as R², for each model. This statistical measure represents the proportion of the variance in a dependent variable which is the Average Box office revenue, that is predictable from a second independent variable. In our case, there are only 3 features to consider.
 
-These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue. The results are shown on the following table and 
+These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue. The results are shown on the following table and since they are very low, it suggests that none of these individual metrics are strong predictors of an actor's average box office revenue when considered independently. This highlights the complexity of identifying box office success predictors, successes which are likely influenced by a multitude of factors beyond these individual metrics.
 
 | Variable            | R^2          |
 |---------------------|--------------|
@@ -189,11 +189,9 @@ These values help us understand the effectiveness of each actor-centric metric (
 | Years of casting    | 0.002        |
 | Number of movies    | 0.001        |
 
+In many real-world datasets, especially those related to social phenomena like movie financial results, the distribution of their values can be heavy-tailed. This means that a large proportion of the data points are gathered in the lower range (like actors with few movies), but there's a long tail in the distribution representing significant cases (like actors with many movies). Standard statistical methods might not effectively capture the characteristics of such distributions. For this reason, we decide to use the Complementary Cumulative Distribution Function of our toolbox, to better capture the data distribution.
 
-
-<div style="text-align: center;">
-    <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
-</div>
+The use of logarithmic scaling in the y-axis ('log' scale) helps in better visualizing and interpreting data that spans several orders of magnitude, which is often the case with heavy-tailed distributions like box office revenues.
 
 <div style="text-align: center;">
     <div style="display: inline-block; width: 49%; margin: auto;">
@@ -202,6 +200,12 @@ These values help us understand the effectiveness of each actor-centric metric (
     <div style="display: inline-block; width: 49%; margin: auto;">
         <img src="./img/Marko_ccdf_years_casting.png" alt="second plot" style="width: 100%;">
     </div>
+</div>
+
+In both cases, the CCDF plots shows a linear trend in the logscale plot, which is typical of heavy-tailed distributions. This fact will have to be kept in mind when we divide the data into smaller subsets of similar sizes.
+
+<div style="text-align: center;">
+    <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
