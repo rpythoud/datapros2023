@@ -76,12 +76,18 @@ With our analysis, we could in theory predict future box office by basing our as
 To enhance further our understanding of the data distribution, we will delve into a more informative type of data representation.
 
 <div style="text-align: center;">
-    <img src="./img/adam_violin_plot.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/adam_violin_plot.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
 Violin plots are useful because they immediately provide the density of the distribution, the median, quartiles range as well as the outliers.
 
 This plot in particular is interesting because some languages, like German anf French, have a wider range of revenues (potentially indicating both low and high gross revenues of movies). Others, like Korean and English, have a narrower distribution (potentially more consistent revenue figures). Finaly, some languages, like the Korean, has a high density of data around the median revenue, as indicated by the thickness of the violins.
+
+<div style="text-align: center;">
+    <img src="./img/adam_movie_runtime.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+</div>
+
+We can infer from the movie runtime plot there seems to be no linear relationship between revenue and runtime. Furthermore, the movie runtime data seems normaly distributed around 100 minutes of movie duration. This is a useful indication to identify the most suited movie runtime associated to the highest box office revenues.
 
 ### 9:00-9:30: Coffee break
 
