@@ -233,22 +233,71 @@ We can perform the same kind of analysis but with respect to the Career Length o
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
+Movies are all about ideas. And while movie's genre provides some (limited) information about what to expect the movie will tell us, much better insight into movie's ideas can be gained by analyzing its plot. Regrettably, we couldn't sit and watch thousands upon thousands of movies (we have to prepare for ADA exam), so we had to find a quicker way to analyze topics and motives that commonly occur in stories on screen. To that end, we decided to utilize **Latent Dirichlet Allocation (LDA)** to create a topic model based on summaries of movies in our dataset.
 
+But just throwing raw data into the algorithm would have produced practically useless results. There are just too many words necessary for inteligible speech that carry no useful information for determining the topics. That's why we decided to extract from summaries only nouns, verbs, adjectives and adverbs, as they can tell us the most about the plot. We put the texts through the `spacy` pipeline and used POS tags to filter useful words. That way, instead of the original summary, each movie was represented by a word list, free of prepositons, pronouns and other noise people need to communicate. Even the great `spacy` pipeline made an occasional misstake, so we further filtered our lists using regular expressions to remove numbers an hyphenation that somehow slipped in.
+
+We did the LDA topic analysis, and lo and behold! Our results were rather bad... _Casablanca_ was characterized as a film about love and family. _The Godfather_ was a nice coming-of-age piece. Somwthing was wrong. We tried using [BERT](https://arxiv.org/pdf/1810.04805.pdf) based model, [BERTopic](https://maartengr.github.io/BERTopic/index.html), and while it produced somewhat better results, it was deemed to impractical for our goal, as it classified each document in just one topic, and we wanted to see the mixtures that arose in the movies. There was a way to approximate such probabilities with this model, but it seemed like an overkill.
+
+So we went back to the original idea of using traditional tools and reached into Robert's bag of tricks to try and solve our problems. In the bag we found a perfect tool to reduce the amount of noise in our model: TF-IDF analysis! First, we created a dictionary of words based on our corpus, and discarded 50 most commonly occuring words right away. Those were the words like _take_, _give_, _go_ and simmilar, that carried little information useful for topic detection. Next, we constructed a TF-IDF matrix and removed from each summary list bottom $10\%$ of the words based on the obtained scores.
+
+Using LDA topic analysis, we managed to extract 30 topics for our corpus. Instead of giving them subjective names that might be misleading, we decided to name them by combining five words from topic representation that had the highest weights. So, how did our model do this time? Take a look for yourself.
+
+These are the topics found in _Casablanca_:
+
+!TODO: INSERT IMAGE casablanca.html
+
+And these are the ones found in _The Godfather_:
+
+!TODO: INSERT IMAGE godfather.html
+
+They seem to make sense. Our topics mostly well reflect the ideas and motives presentend in the movies.
+
+One more technical note: in the following discussion we often use our interpretations of the topics. These interpretations are subjective, and often the underlying meaning of the dopic depends as much from the movie that is analyzed as from the topic itself. That's why when you hover your mouse over the key terms in our text, the original five-word topic name will pop up, so you can decide if you agree with our itnerpretation. The key terms will be <span title="And the text will pop-up on hover!" style="text-decoration: underline; cursor: help;">underlined</span>.
+
+Having made a good model, we can now explore the relationship between topics and movie's box office success. Let's take a look at which topics are the most common among all the films.
+
+!TODO: INSERT IMAGE proportion_all.html
+
+We can se that most movies include in some whay the discussion of <span title="mother-family-woman-child-relationship" style="text-decoration: underline; cursor: help;">family</span>, followed closely by <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime and law enforcement</span>. Interestingly, <span title="zombie-bring-bite-reanimate-hosue" style="text-decoration: underline; cursor: help;">zombies</span> are near the end of the list, and <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> sits firmly at the middle.
+
+Now that we see which ideas are the most common, let's explore which ones bring in the most money.
+
+!TODO: INSERT IMAGE revenue_all.html
+
+Unsurprisingly, pirates and <span title="ship-crew-destroy-order-mission" style="text-decoration: underline; cursor: help;">space operas</span> bring in the big bucks, along with <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> and <span title="hosue-body-attack-shoot-head" style="text-decoration: underline; cursor: help;">violence</span>. So if you want to make money, set your film in space, give it big heroes and let there be a lot of violence! And if your goal is to fail financially and tell all your friends how the art is dead in Hollywood, make a movie about a <span title="train-letter-write-writer-death" style="text-decoration: underline; cursor: help;">girl writting a letter</span> on a train about her <span title="parent-camp-woman-family-play" style="text-decoration: underline; cursor: help;">camping trip with family</span> on which she found a <span title="wish-family-lift-son-djin" style="text-decoration: underline; cursor: help;">magic lamp</span>.
+
+So these are the topics that made the most money overall, but what happens when we look at year-by-year stats? To do that, we performed a temporal microanalysis with a three-year window.
+
+!TODO: INSERT IMAGE micro_occurence.html
+
+Disregarding the results from the late XIX and early XX century (which are extremely susceptible to noise since relatively small number of movies was made back then, and data about them is of low quality so is mostly disregarded in our study), it seems that there is a growth in number of <span title=mother-family-woman-child-relationship style="text-decoration: underline; cursor: help;">family flicks</span> and <span title= school-student-girl-mother-boy style="text-decoration: underline; cursor: help;">highschool romances</span>, while <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime movies</span> are going down in number.
+
+So, that's which motives are popular, but which ones bring in the cash?
+
+!TODO: INSERT IMAGE micro_revenue.html
+
+Looking at the graph of box office revenues per topic in time, there is a huge bump around 1939, which is probably single-handedly created by Sleznick's and Fleming's [_Gone with the wind_](https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)), a highest-grossing movie of all time when adjusted for inflation. During the WWII, <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> seemed to be more popular then usually, and the rest of the newer data is made miniscule by Fleming's masterpiece.
+
+!TODO: INSERT IMAGE micro_revenue_zoomed.html
+
+However, if you were to zoom in to the period 1980s-2010s, you could see that <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> is once again bringing in more and more money, and <span title="ship-crew-destroy-order-mission" style="text-decoration: underline; cursor: help;">space adventures</span> and <span title="ship-crew-pirate-room-island" style="text-decoration: underline; cursor: help;">pirates</span> are becoming quite lucrative (might this be attributed to Verbinsi's _The Pirates of the Caribbean_?). Even though large in number, <span title=mother-family-woman-child-relationship style="text-decoration: underline; cursor: help;">family flicks</span> and <span title= school-student-girl-mother-boy style="text-decoration: underline; cursor: help;">highschool romances</span> don't bring in a lot of money these days.
+
+To say that selecting certain motives for your films will guarantee you big monetary success would be a lie. But popularity of motives is shaped by general societal climate, and ignoring it would bring no good either. In conclusion, we can't guarantee that you will make a lot of money by making a big <span title="ship-crew-destroy-order-mission" style="text-decoration: underline; cursor: help;">space-opera</span> about intergalactic <span title="ship-crew-pirate-room-island" style="text-decoration: underline; cursor: help;">pirate</span> <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroes</span>, but we are quite sure you won't lose much, either!
 
 ### 11:00-12:00 Business lunch with the board and closing statement
 
 As we delve into the intricate details of our data analysis, it becomes evident that the successful recipe for a blockbuster involves not only the mastery of storytelling but also a keen understanding of audience preferences and the many parameters at bay. We don’t yet have the best plot planned out, but thanks to those insightful analysis, we can already head in the right direction to maximize our chance of being the next wonder of cinema ! 
 
-In our pursuit of excellence, we've identified
-First thing first, our movie will need to be a “ Genre from Adam “ (I assume it’s Action and Adventure). For this upcoming action film, we recognize the need for a nuanced exploration of these themes, blending heart-pounding action sequences with emotionally resonant storytelling. It will have to be in English, ensuring that the narrative reaches out to the maximum audience and can speak to consumers across the globe.
+First thing first, our movie will need to be an animated action and adventure movie ! For this upcoming action film, we recognize the need for a nuanced exploration of these themes, blending heart-pounding action sequences with emotionally resonant storytelling. It will have to be in English, ensuring that the narrative reaches out to the maximum audience and can speak to consumers across the globe.
 
 In alignment with our commitment to diversity and inclusivity, who’s ethics is only a secondary concern, our analysis indicates the importance of featuring a cast that reflects the richness of the global audience. Hence, we've set a target of 30-40% female representation in prominent roles. This decision not only aligns with societal trends but also opens the door for fresh perspectives and a more dynamic on-screen chemistry.
 
-Not only that, but we need the most famous and experienced actors that we can find. A star-studded ensemble, enlisting only the ones with extensive portfolios. Quantity over quality. These cinematic icons bring not only their acting prowess but also a loyal fanbase, guaranteeing heightened anticipation for our film.
+Not only that, but we need the most famous and experienced actors that we can find. A star-studded ensemble, enlisting only the ones with extensive portfolios. Quantity over quality. These cinematic icons bring not only their acting prowess but also a loyal fanbase, guaranteeing heightened anticipation for our film. If we go the animated road, maybe the characters can be based on well known actors or have them as voice actors !
 
-Now that we have the genre of the movie, our cast of wonderful actors, the last step to help us would be to have the best possible topic in mind. After careful investigation of the topics from the best movies, we conclude that we will need a compelling narrative theme that resonates universally : “ Insert Dusan topic”
+Now that we have the genre of the movie, our cast of wonderful actors, the last step to help us would be to have the best possible topic in mind. After careful investigation of the topics from the best movies, we conclude that we will need a compelling narrative theme that will bring much audience : a space-opera about an intergalactic pirate hero !
 
-As we meticulously curate this cinematic experience, Blockbuster Inc. is excited to deliver an “action-packed (if that’s correcte)” spectacle that transcends will put all the odds in our favor ! “Stay tuned for the grand unveiling of our magnum opus, where love and family take center stage amidst the adrenaline-pumping sequences that define the action genre.” (Si c’est bien ce que j’ai compris des conclusion e Dusan et Adam)
+As we meticulously curate this cinematic experience, Blockbuster Inc. is excited to deliver an action-packed spectacle that will put all the odds in our favor ! Stay tuned for the grand unveiling of our magnum opus, where our new Space Pirate Hero takes center stage amidst the adrenaline-pumping sequences that define the action genre in a grand space adventure !
 
 
 
