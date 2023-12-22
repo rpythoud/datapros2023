@@ -64,29 +64,27 @@ As for the box office revenues, the availability of data regarding the gender di
     <img src="./img/gilles_percentage_male.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
-We'll then proceed by aggregating the distribution of gender for each decade but by keeping only the actors that featured in the 20% most successful movies, both in terms of box office and ratings. This could uncover different significant observations. Overall, both plots look very similar, which suggests again that the overlap between good ratings and high revenues is significant and that the difference between the two subsets is minimal. Although the plots suffer minor fluctuations, we can mention the predominance of male characters through the cinematographic history. This sets the stage for more complex analysis, potentially exploring factors influencing these trends.
+We'll then proceed by aggregating the distribution of gender for each decade but by keeping only the actors that featured in the 20% most successful movies, both in terms of box office and ratings. This could uncover different significant observations. Overall, both plots look very similar, which suggests again that the overlap between good ratings and high revenues is significant and that the difference between the two subsets is minimal. Despite fluctuations, the overall pattern reveals the predominance of male characters through the cinematographic history. Contrary to the hypothesis that higher-rated movies might exhibit a more diverse cast, our findings indicate that both box office success and high ratings show similar patterns of female participation. Notably, there is a recent uptick in female representation, suggesting a positive trend worth further exploration for those seeking to maximize box office potential without compromising ratings. The recent increase in the percentage of women is a noteworthy development. To stay on the cutting edge of money generation, let's delve deeper into the recent evolution of female representation and seize the opportunity to enhance both profitability and ratings. This sets the stage for a more in depth analysis, potentialy exploring factors influencing these trends.
 
 <div style="text-align: center;">
     <img src="./img/gilles_20_percent_rating_revenue.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
-With this observation in mind, the next step is to compute the relative performance of the movie at the box office and in the ratings when varying the percentage of female in the movie cast by decade. 
+Once again, we'll group years to compare averages in a more meaningful manner. This approach gives rise to a new metric: Performance. Performance evaluates a movie's box office (or rating) in relation to the average for movies within the same year group (decades so far). This metric aims to mitigate the impact of inflation, as well as factors such as the increasing number of ticket sales, providing a more nuanced understanding of a movie's success.
 
 <div style="text-align: center;">
     <img src="./img/gilles_error_bars.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
 
-Considering the entire dataset time range, we notice a clear drop when the percentage of women actor exceed 40%.
-Meanwhile, the effect on rating is much less noticable, remaining in a small range of 5% of performance difference.
+The dataset uncovers a significant decline in box office performance when movies feature more than 40% female actors, in stark contrast to rating performance, which maintaining a small range of around 5% in performance difference. Historically, movies with fewer female actors tended to outperform financially. However, as industry trends undergo a rapid evolution, it's crucial to consider both current and future implications...
 
-The box office is our focus, and it seems like gender won't have much effet on our rating. From those analysis, it would seem that historically, a low percentage of women would yield the best results !
-But times are changing, let's check the evolution, let's make sure we don't make any mistake. A bad buzz would not help us in the long term.
+While the primary focus is on box office success, it appears that gender has a limited effect on our movie ratings. Based on these analyses, historical data suggests that a lower percentage of women in movies yielded the best financial results. However, recognizing the changing landscape, let's delve into the evolution of these trends and ensure to keep up with recent trend to avoid potential missteps.
 
 {% include gilles_dynamic.html %}
 
-We keep seeing that the percentage of woman actor has had, and still has, low effect on the rating. We can focus on the revenu.
-While the effect are getting less and less extreme on the performance when it comes to have a higher concentration of women ( as long as it remains close to 50% ), it would still seems that to be in the safer side and maximuze profit, we want to focus in a high concentration of man actors !
-But times are changing fast, we might need more, and mostly more recent data. If we are to stay on the curring age of box office. But everything indicates that a low percentage of women actor would be a better bet to maximise revenue.
+In this decade by decade interactive visualisation, we can observe a bit of nuance on the data that we had over the entire dataset. The data consistently reveals that the percentage of female actors has historically had and continues to have a limited impact on ratings. For revenue, however, the trend is quite different. Although the effects become less extreme with a higher proportion of women (as long as it remains close to 50%), it still appears that, to maximize profit, even in the most recent years, a focus on a higher proportion of male actors is advisable.
+
+As the film industry undergoes transformations, there's evidence to suggest that this trend is waning, signaling a move towards a more equitable gender representation. We need to acknowledge the rapidly changing times, and it may be prudent to seek more recent data to stay on the cutting edge of box office dynamics. However, current indications suggest that maintaining a lower percentage of female actors remains a more lucrative approach for revenue maximization in the film industry.
 
 ### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
 
