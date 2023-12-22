@@ -179,9 +179,17 @@ and their relative contributions:
 | Years of casting    | 0.6789       |
 | Number of movies    | 0.6752       |
 
-The next step is to compute the coefficient of determination denoted as R², for each model. This statistical measure representing the proportion of the variance in a dependent variable which is the Average Box office revenue, that is predictable from a second independent variable. In our case, there are only 3 features to consider.
+The next step is to compute the coefficient of determination denoted as R², for each model. This statistical measure represents the proportion of the variance in a dependent variable which is the Average Box office revenue, that is predictable from a second independent variable. In our case, there are only 3 features to consider.
 
-These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue.
+These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue. The results are shown on the following table and 
+
+| Variable            | $$R^2$$      |
+|---------------------|--------------|
+| Weighted Rating     | 0.2884       |
+| Years of casting    | 0.6789       |
+| Number of movies    | 0.6752       |
+
+
 
 <div style="text-align: center;">
     <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
