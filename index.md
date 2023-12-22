@@ -271,7 +271,7 @@ So these are the topics that made the most money overall, but what happens when 
 
 {% include micro_occurence.html %}
 
-Disregarding the results from the late XIX and early XX century (which are extremely susceptible to noise since relatively small number of movies was made back then, and data about them is of low quality so is mostly disregarded in our study), it seems that there is a growth in number of <span title=mother-family-woman-child-relationship style="text-decoration: underline; cursor: help;">family flicks</span> and <span title= school-student-girl-mother-boy style="text-decoration: underline; cursor: help;">highschool romances</span>, while <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime movies</span> are going down in number.
+Disregarding the results from the late XIX and early XX century (which are extremely susceptible to noise since relatively small number of movies was made back then, and data about them is of low quality so is mostly disregarded in our study), it seems that there is a growth in number of <span title="mother-family-woman-child-relationship" style="text-decoration: underline; cursor: help;">family flicks</span> and <span title="school-student-girl-mother-boy" style="text-decoration: underline; cursor: help;">highschool romances</span>, while <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime movies</span> are going down in number.
 
 So, that's which motives are popular, but which ones bring in the cash?
 
