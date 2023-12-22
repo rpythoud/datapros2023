@@ -245,11 +245,11 @@ Using LDA topic analysis, we managed to extract 30 topics for our corpus. Instea
 
 These are the topics found in _Casablanca_:
 
-!TODO: INSERT IMAGE casablanca.html
+{% include casablanca.html %}
 
 And these are the ones found in _The Godfather_:
 
-!TODO: INSERT IMAGE godfather.html
+{% include godfather.html %}
 
 They seem to make sense. Our topics mostly well reflect the ideas and motives presentend in the movies.
 
@@ -257,29 +257,29 @@ One more technical note: in the following discussion we often use our interpreta
 
 Having made a good model, we can now explore the relationship between topics and movie's box office success. Let's take a look at which topics are the most common among all the films.
 
-!TODO: INSERT IMAGE proportion_all.html
+{% include proportion_all.html %}
 
 We can se that most movies include in some whay the discussion of <span title="mother-family-woman-child-relationship" style="text-decoration: underline; cursor: help;">family</span>, followed closely by <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime and law enforcement</span>. Interestingly, <span title="zombie-bring-bite-reanimate-hosue" style="text-decoration: underline; cursor: help;">zombies</span> are near the end of the list, and <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> sits firmly at the middle.
 
 Now that we see which ideas are the most common, let's explore which ones bring in the most money.
 
-!TODO: INSERT IMAGE revenue_all.html
+{% include revenue_all.html %}
 
 Unsurprisingly, pirates and <span title="ship-crew-destroy-order-mission" style="text-decoration: underline; cursor: help;">space operas</span> bring in the big bucks, along with <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> and <span title="hosue-body-attack-shoot-head" style="text-decoration: underline; cursor: help;">violence</span>. So if you want to make money, set your film in space, give it big heroes and let there be a lot of violence! And if your goal is to fail financially and tell all your friends how the art is dead in Hollywood, make a movie about a <span title="train-letter-write-writer-death" style="text-decoration: underline; cursor: help;">girl writting a letter</span> on a train about her <span title="parent-camp-woman-family-play" style="text-decoration: underline; cursor: help;">camping trip with family</span> on which she found a <span title="wish-family-lift-son-djin" style="text-decoration: underline; cursor: help;">magic lamp</span>.
 
 So these are the topics that made the most money overall, but what happens when we look at year-by-year stats? To do that, we performed a temporal microanalysis with a three-year window.
 
-!TODO: INSERT IMAGE micro_occurence.html
+{% include micro_occurence.html %}
 
 Disregarding the results from the late XIX and early XX century (which are extremely susceptible to noise since relatively small number of movies was made back then, and data about them is of low quality so is mostly disregarded in our study), it seems that there is a growth in number of <span title=mother-family-woman-child-relationship style="text-decoration: underline; cursor: help;">family flicks</span> and <span title= school-student-girl-mother-boy style="text-decoration: underline; cursor: help;">highschool romances</span>, while <span title="police-money-drug-shoot-car" style="text-decoration: underline; cursor: help;">crime movies</span> are going down in number.
 
 So, that's which motives are popular, but which ones bring in the cash?
 
-!TODO: INSERT IMAGE micro_revenue.html
+{% include micro_revenue.html %}
 
 Looking at the graph of box office revenues per topic in time, there is a huge bump around 1939, which is probably single-handedly created by Sleznick's and Fleming's [_Gone with the wind_](https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)), a highest-grossing movie of all time when adjusted for inflation. During the WWII, <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> seemed to be more popular then usually, and the rest of the newer data is made miniscule by Fleming's masterpiece.
 
-!TODO: INSERT IMAGE micro_revenue_zoomed.html
+{% include micro_revenue_zoomed.html %}
 
 However, if you were to zoom in to the period 1980s-2010s, you could see that <span title="power-attack-human-save-use" style="text-decoration: underline; cursor: help;">heroism</span> is once again bringing in more and more money, and <span title="ship-crew-destroy-order-mission" style="text-decoration: underline; cursor: help;">space adventures</span> and <span title="ship-crew-pirate-room-island" style="text-decoration: underline; cursor: help;">pirates</span> are becoming quite lucrative (might this be attributed to Verbinsi's _The Pirates of the Caribbean_?). Even though large in number, <span title=mother-family-woman-child-relationship style="text-decoration: underline; cursor: help;">family flicks</span> and <span title= school-student-girl-mother-boy style="text-decoration: underline; cursor: help;">highschool romances</span> don't bring in a lot of money these days.
 
