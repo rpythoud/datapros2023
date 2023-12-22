@@ -217,6 +217,12 @@ To do so, let's first divide the dataset into two groups of similar sizes and pl
     <img src="./img/Marko_box_revenue_2groups.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
+Then, the t-test enables us to check if there's a noticable difference in the distribution of revenues from two groups of actors defined previously. The first group includes actors who have been in 0 to 10 movies, and the second group consists of actors who have been in 10 to 60 movies. Following this, the code creates a plot showing the average box office earnings for each group. Alongside these averages, it also displays their 95% confidence intervals.
+
+<div style="text-align: center;">
+    <img src="./img/Marko_conf_inter_nb_movies.png" alt="plot" style="width: 70%; margin: auto; display: block;">
+</div>
+
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
 ### 11:00-12:00 Business lunch with the board and closing statement
