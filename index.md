@@ -193,15 +193,13 @@ These values help us understand the effectiveness of each actor-centric metric (
 
 <div style="text-align: center;">
     <table style="margin-left: auto; margin-right: auto;">
-        | Variable            | R^2          |
-        |---------------------|--------------|
-        | Weighted Rating     | 0.033        |
-        | Years of casting    | 0.002        |
-        | Number of movies    | 0.001        |
+| Variable            | R^2          |
+|---------------------|--------------|
+| Weighted Rating     | 0.033        |
+| Years of casting    | 0.002        |
+| Number of movies    | 0.001        |
     </table>
 </div>
-
-
 
 In many real-world datasets, especially those related to social phenomena like movie financial results, the distribution of their values can be heavy-tailed. This means that a large proportion of the data points are gathered in the lower range (like actors with few movies), but there's a long tail in the distribution representing significant cases (like actors with many movies). Standard statistical methods might not effectively capture the characteristics of such distributions. For this reason, we decide to use the Complementary Cumulative Distribution Function of our toolbox, to better capture the data distribution.
 
