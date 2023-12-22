@@ -121,6 +121,20 @@ As the film industry undergoes transformations, there's evidence to suggest that
     <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 80%; margin: auto; display: block;">
 </div>
 
+| Principal Component | Explained Variance Ratio |
+|---------------------|---------------------------|
+| 1                   | 0.5805                    |
+| 2                   | 0.3110                    |
+| 3                   | 0.1085                    |
+
+### Variable Contribution to the First Principal Component
+
+| Variable            | Contribution |
+|---------------------|--------------|
+| Weighted Rating     | 0.2884       |
+| Years of casting    | 0.6789       |
+| Number of movies    | 0.6752       |
+
 <div style="text-align: center;">
     <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
