@@ -202,11 +202,15 @@ The use of logarithmic scaling in the y-axis ('log' scale) helps in better visua
     </div>
 </div>
 
-In both cases, the CCDF plots shows a linear trend in the logscale plot, which is typical of heavy-tailed distributions. This fact will have to be kept in mind when we divide the data into smaller subsets of similar sizes.
+In both cases, the CCDF plots shows a linear trend in the logscale plot, which is typical of heavy-tailed distributions. This fact will have to be kept in mind when we divide the data into smaller subsets of similar sizes. In fact, we can divide the data into groups of similar sizes, following a logarithmic distribution like the heavy-tailed distribution of revenues. The following histograms implement this kind of procedure and show the average results by increasing steps of aggregated number of movies an actor has participated in.
 
 <div style="text-align: center;">
     <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
 </div>
+
+The plots clearly show a shift of the distribution to the right of the average box office when considering groups of increasing filmography volumes. The next step is to verify scientificaly, with the help of hypothesis testing, if actors with higher number of movies indeed feature in financially more successful movies.
+
+To do so, let's first divide the dataset into two groups of similar sizes and plot their average box office distributions.
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
