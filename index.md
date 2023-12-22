@@ -130,9 +130,9 @@ First, let's explore the actor-centric metrics and their films' average box offi
 
 The Pearson correlation coefficients provide a quantifiable measure of how these factors are related, although it's important to note that a correlation does not imply causation. We'll look at the p-value, which will help us understand if the link we see in our data is meaningful or just happened by chance. In all cases above, the Pearson correlation coefficients indicate weak to modest relationships between the features. Furthermore, the computed p-value are very low, which consistently point to these relationships being statistically significant. This means that despite the low strength of the linear correlations, the relationships between these variables are consistent and unlikely to be due to random fluctuations in the data. Overall, an increased number of movies or a longer cinematographic career translate to movies with higher box office revenues. As expected, higher ratings translates to higher box office revenues on average.
 
-One way to assess the strength between actor-centric metrics relationship is to perform the Principal Component Analysis (PCA). The PCA analysis can in particular be used to uncover which variable is the most influential. The following tables collects the computed explained variance ratio for each of these components, thus indicating how much of the total variance in the data each component accounts for.
+One way to assess the strength between actor-centric metrics relationship is to perform the Principal Component Analysis (PCA). The PCA analysis can in particular be used to uncover which variable is the most influential. The following tables collect the computed explained variance ratio for each of these components, thus indicating how much of the total variance in the data each component accounts for.
 
-| Principal Component | Explained Variance Ratio |
+| Principal Component | Explained Variance Ratio  |
 |---------------------|---------------------------|
 | 1                   | 0.5805                    |
 | 2                   | 0.3110                    |
@@ -143,6 +143,10 @@ One way to assess the strength between actor-centric metrics relationship is to 
 | Weighted Rating     | 0.2884       |
 | Years of casting    | 0.6789       |
 | Number of movies    | 0.6752       |
+
+The next step denoted as R², for each model. This is a statistical measure that represents the proportion of the variance in a dependent variable which is Average Box office revenue, that is predictable from an independent variable. In our case, there are only 3 features to consider.
+
+These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue.
 
 <div style="text-align: center;">
     <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
@@ -159,7 +163,7 @@ One way to assess the strength between actor-centric metrics relationship is to 
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
-### 11:00-12:00 Business lunch with the board !
+### 11:00-12:00 Business lunch with the board and closing statement
 
 
 
