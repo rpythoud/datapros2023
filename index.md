@@ -109,7 +109,7 @@ In this decade by decade interactive visualisation, we can observe a bit of nuan
 
 As the film industry undergoes transformations, there's evidence to suggest that this trend is waning, signaling a move towards a more equitable gender representation. We need to acknowledge the rapidly changing times, and it may be prudent to seek more recent data to stay on the cutting edge of box office dynamics. However, current indications suggest that maintaining a lower percentage of female actors remains a more lucrative approach for revenue maximization in the film industry.
 
-### 10:00-10:30 Actors influence on the Box office | Speaker: Marko
+### 10:00-10:30  Influence of actors' fame on revenue | Speaker: Marko
 
 <div style="text-align: center;">
     <div style="display: inline-block; width: 49%; margin: auto;">
