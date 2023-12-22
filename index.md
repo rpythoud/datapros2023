@@ -122,6 +122,10 @@ As the film industry undergoes transformations, there's evidence to suggest that
 </div>
 
 <div style="text-align: center;">
+    <img src="./img/Marko_2x2.png" alt="plot" style="width: 100%; margin: auto; display: block;">
+</div>
+
+<div style="text-align: center;">
     <div style="display: inline-block; width: 49%; margin: auto;">
         <img src="./img/Marko_ccdf_nb_movies.png" alt="plot" style="width: 100%;">
     </div>
