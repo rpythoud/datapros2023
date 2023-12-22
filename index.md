@@ -214,7 +214,7 @@ The plots clearly show a shift of the distribution to the right of the average b
 To do so, let's first divide the dataset into two groups of similar sizes and plot their average box office distributions.
 
 <div style="text-align: center;">
-    <img src="./img/Marko_box_revenue_2groups.png" alt="plot" style="width: 80%; margin: auto; display: block;">
+    <img src="./img/Marko_box_revenue_2groups.png" alt="plot" style="width: 90%; margin: auto; display: block;">
 </div>
 
 Then, the t-test enables us to check if there's a noticable difference in the distribution of revenues from two groups of actors defined previously. The first group includes actors who have been in 0 to 10 movies, and the second group consists of actors who have been in 10 to 60 movies. Following this, the code creates a plot showing the average box office earnings for each group. Alongside these averages, it also displays their 95% confidence intervals.
@@ -225,8 +225,22 @@ Then, the t-test enables us to check if there's a noticable difference in the di
 
 ### 10:30-11:00 Topic analysis, summaries processing | Speaker: Dusan
 
+
+
 ### 11:00-12:00 Business lunch with the board and closing statement
 
+As we delve into the intricate details of our data analysis, it becomes evident that the successful recipe for a blockbuster involves not only the mastery of storytelling but also a keen understanding of audience preferences and the many parameters at bay. We don’t yet have the best plot planned out, but thanks to those insightful analysis, we can already head in the right direction to maximize our chance of being the next wonder of cinema ! 
+
+In our pursuit of excellence, we've identified
+First thing first, our movie will need to be a “ Genre from Adam “ (I assume it’s Action and Adventure). For this upcoming action film, we recognize the need for a nuanced exploration of these themes, blending heart-pounding action sequences with emotionally resonant storytelling. It will have to be in English, ensuring that the narrative reaches out to the maximum audience and can speak to consumers across the globe.
+
+In alignment with our commitment to diversity and inclusivity, who’s ethics is only a secondary concern, our analysis indicates the importance of featuring a cast that reflects the richness of the global audience. Hence, we've set a target of 30-40% female representation in prominent roles. This decision not only aligns with societal trends but also opens the door for fresh perspectives and a more dynamic on-screen chemistry.
+
+Not only that, but we need the most famous and experienced actors that we can find. A star-studded ensemble, enlisting only the ones with extensive portfolios. Quantity over quality. These cinematic icons bring not only their acting prowess but also a loyal fanbase, guaranteeing heightened anticipation for our film.
+
+Now that we have the genre of the movie, our cast of wonderful actors, the last step to help us would be to have the best possible topic in mind. After careful investigation of the topics from the best movies, we conclude that we will need a compelling narrative theme that resonates universally : “ Insert Dusan topic”
+
+As we meticulously curate this cinematic experience, Blockbuster Inc. is excited to deliver an “action-packed (if that’s correcte)” spectacle that transcends will put all the odds in our favor ! “Stay tuned for the grand unveiling of our magnum opus, where love and family take center stage amidst the adrenaline-pumping sequences that define the action genre.” (Si c’est bien ce que j’ai compris des conclusion e Dusan et Adam)
 
 
 
