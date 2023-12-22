@@ -183,7 +183,7 @@ The next step is to compute the coefficient of determination denoted as R², for
 
 These values help us understand the effectiveness of each actor-centric metric ('Weighted Rating', 'Years of Casting', 'Number of Movies') in predicting the average box office revenue. A higher R² value suggests a stronger relationship between the independent variable and the average box office revenue. The results are shown on the following table and 
 
-| Variable            | $$R^2$$      |
+| Variable            | $R^2$        |
 |---------------------|--------------|
 | Weighted Rating     | 0.2884       |
 | Years of casting    | 0.6789       |
