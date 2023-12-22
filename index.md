@@ -40,6 +40,13 @@ From this plot, we can see that the increase of movie revenues over the years fo
 ### 8:30-9:00: Movie genres clustering | Speaker: Adam
 
 {% include adam_camember.html %}
+
+We created a pie chart to visualise how the movie genres are distributed. This allow us to have a quick look at the movie distribution, assigned to the main genres.
+
+The genre "Drama & Romance" is the most common in the dataset, making up a quarter of the movies. "Comedy" and "Action & Adventure" also represent significant portions, while "Horror & Thriller" and "Crime & Mystery" are less represented but still significant.
+
+The "Others" category, which represents the aggregated total of the least common genres, makes up a larger slice than two individual genres, indicating that the movies genres follows a heavy-tailed distribution.
+
 {% include adam_strats.html %}
 {% include adam_genre_revenu.html %}
 {% include adam_language_revenu.html %}
