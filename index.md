@@ -128,15 +128,15 @@ First, let's explore the actor-centric metrics and their films' average box offi
     <img src="./img/Marko_reg_box_rating.png" alt="plot" style="width: 70%; margin: auto; display: block;">
 </div>
 
-The Pearson correlation coefficients provide a quantifiable measure of how these factors are related, although it's important to note that a correlation does not imply causation. We'll look at the p-value, which will help us understand if the link we see in our data is meaningful or just happened by chance.
+The Pearson correlation coefficients provide a quantifiable measure of how these factors are related, although it's important to note that a correlation does not imply causation. We'll look at the p-value, which will help us understand if the link we see in our data is meaningful or just happened by chance. In all cases above, the Pearson correlation coefficients indicate weak to modest relationships between the features. Furthermore, the computed p-value are very low, which consistently point to these relationships being statistically significant. This means that despite the low strength of the linear correlations, the relationships between these variables are consistent and unlikely to be due to random fluctuations in the data. Overall, an increased number of movies or a longer cinematographic career translate to movies with higher box office revenues. As expected, higher ratings translates to higher box office revenues on average.
+
+One way to assess the strength between actor-centric metrics relationship is to perform the Principal Component Analysis (PCA). The PCA analysis can in particular be used to uncover which variable is the most influential. The following tables collects the computed explained variance ratio for each of these components, thus indicating how much of the total variance in the data each component accounts for.
 
 | Principal Component | Explained Variance Ratio |
 |---------------------|---------------------------|
 | 1                   | 0.5805                    |
 | 2                   | 0.3110                    |
 | 3                   | 0.1085                    |
-
-### Variable Contribution to the First Principal Component
 
 | Variable            | Contribution |
 |---------------------|--------------|
